@@ -129,4 +129,7 @@ succeeded
  7) Mission; 
 
 ## Info Security Control
- - technical and non-technical safety gates attempting to:
+ - technical and non-technical safety gates
+ 
+### class
+ - class is going well so far. Can't wait to do more hands-on work tho!
