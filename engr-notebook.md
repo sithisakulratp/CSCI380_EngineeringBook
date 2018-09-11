@@ -172,3 +172,4 @@
 # WEEK 4
 ## 9.11.18
 
+### Bash Commands ++
