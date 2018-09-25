@@ -194,16 +194,16 @@
  #### Analyze ARP vs. Open Scan
  - Performed in Wireshark
  - **ARP Scan**: (```arp-scan -I eth1 <target network>```)
- 	a. the packet that represents the test to see if the machine is active is the ARP Request, the one asking "Who has ...?"
-	b. the packet that represents the answer, if the machine is active is the ARP Reply (usually the one right after the request)
-	c. there is no such packet that represents the answer, if the machine is _not_ active.
+ 	- the packet that represents the test to see if the machine is active is the ARP Request, the one asking "Who has ...?"
+	- the packet that represents the answer, if the machine is active is the ARP Reply (usually the one right after the request)
+	- there is no such packet that represents the answer, if the machine is _not_ active.
  - **The Half-Open Scan**: (```nmap -sS <target network>```)
- 	a. the packet that represents the test to see if the machine is active is the [SYN].
+ 	- the packet that represents the test to see if the machine is active is the [SYN].
 		- specifically, ```58 33657 -> 23 [SYN] ...```
-	b. the packet that represents the answer, if the machine is active is the [SYN, ACK] and then [RST]
+	- the packet that represents the answer, if the machine is active is the [SYN, ACK] and then [RST]
 		- specifically, ```60 23 -> 33657 [SYN, ACK] ...```
 				```54 33657 -> 23 [RST] ...```
-	c. the packet that represents the answer, if the machine is _not_ active is [SYN] and then [RST, ACK]
+	- the packet that represents the answer, if the machine is _not_ active is [SYN] and then [RST, ACK]
 		- specifically, ```58 33657 -> 8000 [SYN] ...```
 				```60 8080 -> 33657 [RST, ACK] ...```
 
