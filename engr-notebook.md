@@ -173,3 +173,5 @@
 ## 9.11.18
 
 ### Bash Commands ++
+ - ```ip route``` view the IP Addresses of the machine
+ - ```
