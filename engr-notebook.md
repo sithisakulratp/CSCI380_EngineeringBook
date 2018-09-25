@@ -216,4 +216,10 @@
 	- Identity Theft
 	- Countermeasures
 - There are internal and external social engineering
+	- In class video "Betrayed," we learned about an insider threat from within a company and how to spot the behaviors that would be a threat to the company.
+	- The movie really helped me learn about this topic!
+	
+# Week 6
+## 9.25.18
+ - Sniffing
  
