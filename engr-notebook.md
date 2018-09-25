@@ -171,7 +171,49 @@
 
 # WEEK 4
 ## 9.11.18
-
+ - Introduction to Network Scanning
 ### Bash Commands ++
- - ```ip route``` view the IP Addresses of the machine
- - ```
+ #### Safety Checks Commands
+ - ```ip route``` - a command used to display Kali's machine table
+ - ```ip route del default``` - command used to delete the default route
+ #### Identify Yourself Commands
+ - ```ifconfig``` - command used to display Kali's machine's interfaces along with the IP addresses
+ - The network segment of the target network from the lab is 172.28.128.0/24
+ #### Identify Life System Commands
+ - ```nmap -n -sn -PR 172.28.128.0/24```
+ 	- ```nmap``` or Network Mapper: a free and open-source security scanner used to discover hosts and services on a computer network, thus building a "map" of the network
+	- ```-n``` - command tells nmap to NEVER do DNS reolution/always resovle [default: sometimes]
+	- ```-sn``` - commands tells nmap to do a port can after host discovery, and only print out the available hosts that respond to the host discovery probes. This is commonly known as a "ping scan."
+	- ```-PR``` - Also known as ARP Ping or Neighbor Discovery. It scans for an Ethernet LAN. It is done by default against targets on a local Ethernet network even if you specify other -P* options, because it is almost always faster and more effective.
+ - ```arp-scan -I eth1 172.28.128.0/24``` - a very fast ARP packet scanner that shows every active IPv4 devices on your subnet. Cool thing about arp-scan is that it shows all active devices even if they have firewalls. Devices cannot hide from ARP packets like they hide from Ping.
+ 	- ```-I``` is short for interface.
+ #### Identify Listening Services
+ - ```nmap -sS 172.28.128.5```
+ 	- ```-sS``` is used for a half-open scan.
+ - ```unicornscan -msf 172.28.128.5``` is used to perform a TCP Connect Scan (note that this is different than TCP Scan)
+ #### Analyze ARP vs. Open Scan
+ - Performed in Wireshark
+ - **ARP Scan**: (```arp-scan -I eth1 <target network>```)
+ 	a. the packet that represents the test to see if the machine is active is the ARP Request, the one asking "Who has ...?"
+	b. the packet that represents the answer, if the machine is active is the ARP Reply (usually the one right after the request)
+	c. there is no such packet that represents the answer, if the machine is _not_ active.
+ - **The Half-Open Scan**: (```nmap -sS <target network>```)
+ 	a. the packet that represents the test to see if the machine is active is the [SYN].
+		- specifically, ```58 33657 -> 23 [SYN] ...```
+	b. the packet that represents the answer, if the machine is active is the [SYN, ACK] and then [RST]
+		- specifically, ```60 23 -> 33657 [SYN, ACK] ...```
+				```54 33657 -> 23 [RST] ...```
+	c. the packet that represents the answer, if the machine is _not_ active is [SYN] and then [RST, ACK]
+		- specifically, ```58 33657 -> 8000 [SYN] ...```
+				```60 8080 -> 33657 [RST, ACK] ...```
+
+# Week 5
+## 9.18.18
+- Social Engineering
+	- Types of Social Engineering
+	- Insider Threats
+	- Impersonation: Social networking
+	- Identity Theft
+	- Countermeasures
+- There are internal and external social engineering
+ 
