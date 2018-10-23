@@ -221,5 +221,50 @@
 	
 # Week 6
 ## 9.25.18
- - Sniffing
- 
+ - The biggest confusion for me for this topic was the difference between router, switch and hub
+ 	- **Router**:
+		- operate at the network layer (3)
+		- forwards data packets along networks
+		- is connected to at least two network segments (subnets)
+		- are located at gateways
+		- use protocols to communicate with each other and configure the best route between any two hosts
+	- **Switch**:
+		- filters AND forwards packets between LAN segments
+		- operate at the data link layer (2) of the OSI Reference Model
+		- sometimes operate at layer 3 (network) to bblur distinction and performs line speed routing
+	- **Hub**:
+		- operate at the physical layers (1)
+		- common connection point for devices in a network
+		- contains multiple ports (this is where when a packet arrives at one port, it's copied to all other ports so that all segments of the LAN can see all packets)
+
+ - **Sniffing, ARP Poisoning**
+ 	- Sniffing is interception and logging of network traffic (the lab)
+		- in the lab, we used Kali as the attacker, Kali-clone as the target, and Metasploitable2 as web server.
+			ARP Spoof MITM Attack --> Ettercap, tcpdump
+			Man-in-the-Middle (Track the use of web serer of the target)
+- **DHCP Attack** - we used to attack DHCP servers
+	1. DHCP client discovers DHCP server
+	2. DHCP server offers/provides address, subnet, gateway, DNS, timer server, and more to the client
+	3. DHCP client requests
+	4. DHCP server then acknowledge the client
+
+# WEEK 7
+## 10.02.18
+- Vulnerability Scanning with Nikto Lab
+	- I had no problem with this lab. The lab was clear and makes sense.
+
+# WEEK 8
+## 10.09.18
+- Metasploit and Password Crcking with John the Ripper Lab
+	- In Metasploit, we ued kali and winxpie8 VM boxes
+		- For winxpie8, I (and most of the class) had trouble with firing up the windows.
+			 - We solved it using what Kevin has in his Engineering Notebook,
+			 	- "Rearm Windows XP Grace Period"
+				
+	- In John the Ripper Lab, we used kali and kali-clone for VM boxes
+		- This lab was very interesting.
+	
+# WEEK 9
+## 10.16.18
+- C and Assembly Part 1 Lab
+	- The class was going a little too slow and we didn't really cover all the lab. It would be helpful if we could just go over the questions and explain what you were trying to ask when we are running out of time. Otherwise, the class is going just right for me.
