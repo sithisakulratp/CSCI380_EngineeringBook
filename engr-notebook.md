@@ -268,3 +268,18 @@
 ## 10.16.18
 - C and Assembly Part 1 Lab
 	- The class was going a little too slow and we didn't really cover all the lab. It would be helpful if we could just go over the questions and explain what you were trying to ask when we are running out of time. Otherwise, the class is going just right for me.
+	
+# WEEK 10
+## 10.23.18
+- C and Assembly Part 2 Lab
+	- The lab was a little more challenging because we had to compare and contrast the assembly languages, MIPs and ARMs
+	- This week, class was going just right. This is also because the solution from the previous lab helps guide this lab.
+  
+# WEEK 11
+## 10.30.18
+- We started to learn about IDA Pro Freeware, the popular disassembler for reverse engineer
+ 	- This class was going just the right pace but I wish we could do more examples on IDA Pro
+	
+# WEEK 12
+## 11.06.18
+- I was not in class this week, but I believed the class went over more on IDA Pro Freeware and did more examples on how to use it to reverse engineer the bomb challenge
