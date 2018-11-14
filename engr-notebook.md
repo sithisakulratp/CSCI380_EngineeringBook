@@ -283,3 +283,8 @@
 # WEEK 12
 ## 11.06.18
 - I was not in class this week, but I believed the class went over more on IDA Pro Freeware and did more examples on how to use it to reverse engineer the bomb challenge
+	- Also, the walkthrough video for the password challenge assignment was very helpful
+	
+# WEEK 13
+## 11.13.18
+- More on IDA Pro Freeware in class. That was helpful for me to understand more about the assembly
