@@ -288,3 +288,18 @@
 # WEEK 13
 ## 11.13.18
 - More on IDA Pro Freeware in class. That was helpful for me to understand more about the assembly
+
+# WEEK 14
+## 11.20.18
+- NO CLASS - THANKSIVING BREAK
+	- I could not figure out how to do #4 - #5 for the password challenge, especially the xor
+
+# WEEK 15
+## 11.27.18
+- Videos walkthrough for C and Assembly Part 3 were really helpful.
+- trouble with some Intel syntax
+	- jump statements
+	- xor
+	- mov vs lea
+	- call and ret
+	- the use of registers
