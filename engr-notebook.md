@@ -255,8 +255,8 @@
 
 # WEEK 8
 ## 10.09.18
-- Metasploit and Password Crcking with John the Ripper Lab
-	- In Metasploit, we ued kali and winxpie8 VM boxes
+- Metasploit and Password Cracking with John the Ripper Lab
+	- In Metasploit, we used kali and winxpie8 VM boxes
 		- For winxpie8, I (and most of the class) had trouble with firing up the windows.
 			 - We solved it using what Kevin has in his Engineering Notebook,
 			 	- "Rearm Windows XP Grace Period"
